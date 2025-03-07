@@ -3,7 +3,7 @@ import pandas as pd
 def calculer():
     # Load the datasets
     a = pd.read_csv("./home-data-for-ml-course/sample_submission.csv")
-    b = pd.read_csv("./submission_final_billal.csv")
+    b = pd.read_csv("./submission_final_nouveau.csv")
 
     # Check if the 'SalePrice' column exists in both dataframes
     if 'SalePrice' in a.columns and 'SalePrice' in b.columns:
@@ -11,7 +11,7 @@ def calculer():
         differences = abs(a['SalePrice'] - b['SalePrice'])
 
         # Count the number of differences greater than 20,000
-        count = (differences < 10).sum()
+        count = (differences < 20000).sum()
 
         # Display the count
         print(f"Count of SalePrice values with a difference greater than 20,000: {count}")
