@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Charger le modèle
-model = joblib.load('./best_model.pkl')
+model = joblib.load('../bilel/best_model.pkl')
 
 # Récupérer les colonnes attendues par le modèle
 expected_columns = model.feature_names_in_
