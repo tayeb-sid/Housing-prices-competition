@@ -1,0 +1,14 @@
+Analyse Statistique
+    Taille du dataset (ligne / col)
+    Type de données
+    nombre de features  de chaque Type
+    valeurs manquantes 
+Data Preprocessing
+    missing values
+    encoding (label & ordinal)
+    scaling
+    correlation + mutual info
+    dropping features
+Model
+    linear regression
+    SVM
